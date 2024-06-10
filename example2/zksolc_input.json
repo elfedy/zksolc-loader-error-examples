@@ -1,0 +1,19 @@
+{
+    "language": "Solidity",
+    "sources": {
+        "Main.sol": {
+            "content": "pragma solidity ^0.8.0;\n\nimport \"./MiniMath.sol\";\n\ncontract Main {\n    function storeSquare(uint256 x) public returns (uint256) {\n        uint256 square = MiniMath.square(x);\n        return square;\n    }\n}"
+        }
+    },
+    "settings": {
+        "outputSelection": {
+            "*": {
+                "*": [
+                ]
+            }
+        },
+        "optimizer": {
+            "enabled": true
+        }
+    }
+}
