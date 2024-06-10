@@ -7,9 +7,9 @@ Examples to demonstrate zksolc failing when solc includes files loaded by Host F
 ## example1
 Compiling source files directly:
 * `solc --bin Main.sol` works and compiles both binaries.
-* `zksolc --bin Main.sol` fails with `Source code path for 'MinMath.sol' not found`.
+* `zksolc --bin Main.sol` fails with `Source code for path 'MinMath.sol' not found`.
 
 ## example2
 Specifying standard json (Only adding `Main.sol` but not its dependencies)
 * `solc --standard-json solc_input.json` works and compiles both binaries.
-* `cat zksolc_input | zksolc --standard-json` fails with `Source code path for 'MinMath.sol' not found`.
+* `cat zksolc_input | zksolc --standard-json` fails with `Source code for path 'MinMath.sol' not found`.
